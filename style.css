@@ -1,135 +1,238 @@
-:root {
-    --primary-color: #fff5e6;
-    --secondary-color: #ffd1b3;
-    --accent-color: #ff6f61;
-    --highlight-color: #ffae42;
-    --text-color: #3a1f04;
-    --title-color: #e63946;
-    --link-color: #d7263d;
-    --button-hover-color: #ff4500;
-    --font-body: "Segoe UI", sans-serif;
-    --font-title: "Rakkas", serif;
-}
 
-/* Corpo */
-body {
-    background-color: var(--primary-color);
-    color: var(--text-color);
-    font-family: var(--font-body);
-}
+ANA CAROLINA PROSCENCIO DA MATA <ana.proscencio.mata@escola.pr.gov.br>
+09:53 (há 10 horas)
+para mim
 
-/* Cabeçalho */
-.cabecalho {
-    padding: 15px;
-    background-color: var(--secondary-color);
+
+:root{
+    --primary-color: #fffceb;
+    --secondayr-color: #b8e6e7;
+    --text-color: #000000;
+    --link-color: #4f05fc;
+    --background-color: #FFFFFF;
+    --button-hover-color:#c504ff;
+    --font-body:"Chocolate Classical Sans", serif;
+    --font-titulo: "Rakkas", serif;
+}
+#container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    padding: 20px;
+    justify-content: space ;
+    margin-bottom: 80px;
+    flex-wrap: wrap;
+}
+.cabecalho{
+    padding: 5px;
+    background-color: rgba(120, 228, 255, 0.822);
     border-radius: 10px;
-    text-align: center;
-    border-bottom: 4px solid var(--highlight-color);
+    font-size: 2vw;
 }
-
-.cabecalho h2 {
-    color: var(--accent-color);
-}
-
-.mudar {
-    color: var(--title-color);
+.mudar{
+    color: red;
+    text-decoration: line-through;
     font-weight: bold;
     font-size: larger;
 }
-
-.cabecalho p {
-    color: var(--link-color);
+.cabecalho p{
+    color: #c94e4e;
+    text-decoration: line-through;
 }
-
-/* Container dos cartões */
-#container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 20px;
-    padding: 20px;
-    margin-bottom: 80px;
+body{
+    background-image: url('img/library-background.jpg');
+    font-family: var(--font-body);
 }
-
-/* Design dos cartões */
-.design-conteudo {
-    padding: 8px;
-    border-radius: 8px;
-    border: 2px solid var(--text-color);
-    background-color: var(--highlight-color);
+.design-conteudo{
+    padding: 5px;
+    border-radius: 5px;
+    border-color: #000000;
+    border-style: solid;
+    border-width: 1px;
 }
-
-/* Cartões */
-.cartao1, .cartao2, .cartao3, .cartao4, .cartao5, .cartao6, .cartao7, .cartao8, .cartao9 {
-    background: linear-gradient(to bottom, var(--secondary-color), var(--primary-color));
-    color: var(--accent-color);
-    padding: 10px;
-    border-radius: 10px;
-    border: 2px solid var(--highlight-color);
+.cartao1{
+    color: red;
+    padding: 5px;
+    background: linear-gradient(to bottom, rgb(0, 255, 255), rgba(88, 169, 235, 0.575));
+    border-radius: 5px;
+    border-color: #000000;
+    border-style: solid;
+    border-width: 2px;
+    margin-top: 20px;
+    max-width: 300px;
     transform-style: preserve-3d;
     transition: transform 0.8s;
     position: relative;
     cursor: pointer;
-    max-width: 100%;
 }
-
-/* Efeito flip */
-.cartao.flipped .cartao1,
+.cartao2{
+    color: red;
+    padding: 5px;
+    background: linear-gradient(to bottom, rgb(0, 255, 255), rgba(88, 169, 235, 0.568));
+    border-radius: 5px;
+    border-color: #000000;
+    border-style: solid;
+    border-width: 2px;
+    margin-top: 20px;
+    max-width: 300px;
+    transform-style: preserve-3d;
+    transition: transform 0.8s;
+    position: relative;
+    cursor: pointer;
+}
+.cartao3{
+    color: red;
+    padding: 5px;
+    background: linear-gradient(to bottom, rgb(1, 255, 242), rgba(88, 169, 235, 0.61));
+    border-radius: 5px;
+    border-color: #000000;
+    border-style: solid;
+    border-width: 2px;
+    margin-top: 20px;
+    max-width: 300px;
+    transform-style: preserve-3d;
+    transition: transform 0.8s;
+    position: relative;
+    cursor: pointer;
+}
+.cartao4{
+    color: red;
+    padding: 5px;
+    background: linear-gradient(to bottom, rgb(0, 247, 255), rgba(88, 169, 235, 0.603));
+    border-radius: 5px;
+    border-color: #000000;
+    border-style: solid;
+    border-width: 2px;
+    margin-top: 20px;
+    max-width: 300px;
+    transform-style: preserve-3d;
+    transition: transform 0.8s;
+    position: relative;
+    cursor: pointer;
+}
+.cartao5{
+    color: red;
+    padding: 5px;
+    background: linear-gradient(to bottom, rgb(0, 255, 255), rgba(88, 169, 235, 0.548));
+    border-radius: 5px;
+    border-color: #000000;
+    border-style: solid;
+    border-width: 2px;
+    margin-top: 20px;
+    max-width: 300px;
+    transform-style: preserve-3d;
+    transition: transform 0.8s;
+    position: relative;
+    cursor: pointer;
+}
+.cartao6{
+    color: red;
+    padding: 5px;
+    background: linear-gradient(to bottom, rgb(0, 255, 234), rgba(88, 169, 235, 0.555));
+    border-radius: 5px;
+    border-color: #000000;
+    border-style: solid;
+    border-width: 2px;
+    margin-top: 20px;
+    max-width: 300px;
+    transform-style: preserve-3d;
+    transition: transform 0.8s;
+    position: relative;
+    cursor: pointer;
+}
+.cartao7{
+    color: red;
+    padding: 5px;
+    background: linear-gradient(to bottom, rgb(2, 225, 255), rgba(88, 169, 235, 0.582));
+    border-radius: 5px;
+    border-color: #000000;
+    border-style: solid;
+    border-width: 2px;
+    margin-top: 20px;
+    max-width: 300px;
+    transform-style: preserve-3d;
+    transition: transform 0.8s;
+    position: relative;
+    cursor: pointer;
+}
+.cartao8{
+    color: red;
+    padding: 5px;
+    background: linear-gradient(to bottom, rgb(3, 247, 255), rgba(125, 96, 192, 0.568));
+    border-radius: 5px;
+    border-color: #000000;
+    border-style: solid;
+    border-width: 2px;
+    margin-top: 20px;
+    max-width: 300px;
+    transform-style: preserve-3d;
+    transition: transform 0.8s;
+    position: relative;
+    cursor: pointer;
+}
+.cartao9{
+    color: red;
+    padding: 5px;
+    background: linear-gradient(to bottom, rgb(1, 255, 255), rgba(88, 169, 235, 0.596));
+    border-radius: 5px;
+    border-color: #000000;
+    border-style: solid;
+    border-width: 2px;
+    margin-top: 20px;
+    max-width: 300px;
+    transform-style: preserve-3d;
+    transition: transform 0.8s;
+    position: relative;
+    cursor: pointer;
+}
 .cartao.flipped .cartao2,
+.cartao.flipped .cartao1,
 .cartao.flipped .cartao3,
 .cartao.flipped .cartao4,
 .cartao.flipped .cartao5,
 .cartao.flipped .cartao6,
 .cartao.flipped .cartao7,
 .cartao.flipped .cartao8,
-.cartao.flipped .cartao9 {
+.Cartao.flipped .Cartao9{
     transform: rotateY(180deg);
 }
-
-/* Frente e verso dos cartões */
 .card-front, .card-back {
-    backface-visibility: hidden;
-    text-align: left;
-    border-radius: 8px;
-    padding: 10px;
-    word-wrap: break-word;
-    line-height: 1.5;
-    font-size: 16px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  backface-visibility: hidden;
+  text-align: left;
+  font-size: 2vw;
 }
-
-.card-front {
-    background-color: var(--secondary-color);
-    color: var(--text-color);
-}
-
 .card-back {
-    background-color: var(--accent-color);
-    color: var(--primary-color);
-    transform: rotateY(180deg);
+  transform: rotateY(180deg);
+  text-decoration: underline;
+  justify-content: flex-start;
+  overflow: hidden;
+  word-wrap: break-word;
+  line-height: 20px;
+  font-size: 15px;
 }
-
-/* Footer */
-footer {
-    padding: 8px;
-    background-color: var(--title-color);
+.card-front{
+    word-wrap: break-word;
+    overflow: hidden;
+    line-height: 20px;
+    font-size: 15px;
+}
+footer{
+    padding: 5px;
+    background-color: #000000;
     border-radius: 5px;
     position: fixed;
+    margin-top: 20px;
     bottom: 0;
     left: 0;
     width: 100%;
-    border-top: 4px solid var(--highlight-color);
-    text-align: center;
+    margin-top: 10px;
 }
-
-.texto-rodape {
-    color: var(--primary-color);
+.texto-rodape{
+    color: #FFFFFF;
 }
-
-.mark a {
-    color: var(--highlight-color);
-    text-decoration: none;
+.mark a{
+    color: aqua;
 }
-
-.mark a:hover {
-    color: var(--accent-color);
+.mark a:hover{
+    color:deepskyblue;
 }
