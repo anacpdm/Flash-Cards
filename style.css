@@ -1,118 +1,148 @@
-:root{
+:root {
     --primary-color: #fff5e6;
-    --secondayr-color: #ffd1b3;
+    --secondary-color: #ffd1b3;
+    --accent-color: #ff6f61;
+    --highlight-color: #ffae42;
     --text-color: #3a1f04;
+    --title-color: #e63946;
     --link-color: #d7263d;
-    --background-color: #FFFFFF;
-    --button-hover-color:#ff4500;
-    --font-body:"Chocolate Classical Sans", serif;
-    --font-titulo: "Rakkas", serif;
+    --button-hover-color: #ff4500;
+    --font-body: "Segoe UI", sans-serif;
+    --font-title: "Rakkas", serif;
 }
-#container{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 10px;
-    padding: 20px;
-    justify-content: space ;
-    margin-bottom: 80px;
-    flex-wrap: wrap;
+
+/* Corpo */
+body {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    font-family: var(--font-body);
 }
-.cabecalho{
-    padding: 5px;
+
+/* Cabeçalho */
+.cabecalho {
+    padding: 15px;
     background-color: var(--secondary-color);
     border-radius: 10px;
-    font-size: 2vw;
     text-align: center;
-    border-bottom: 1px solid var (--highlight-color);
+    border-bottom: 4px solid var(--highlight-color);
 }
 
 .cabecalho h2 {
     color: var(--accent-color);
 }
-    
+
 .mudar {
     color: var(--title-color);
     font-weight: bold;
     font-size: larger;
 }
-.cabecalho p{
+
+.cabecalho p {
     color: var(--link-color);
 }
-body{
-    background-color: var(--primary-color);
-    color: var(--text-color);
-    font-family: var(--font-body);
+
+/* Container dos cartões */
+#container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    margin-bottom: 80px;
 }
-.design-conteudo{
-    padding: 5px;
+
+/* Design dos cartões */
+.design-conteudo {
+    padding: 8px;
+    border-radius: 8px;
+    border: 2px solid var(--text-color);
+    background-color: var(--highlight-color);
+}
+
+/* Cartões */
+.cartao1, .cartao2, .cartao3, .cartao4, .cartao5, .cartao6, .cartao7, .cartao8, .cartao9 {
+    color: #b71c1c;
+    padding: 4px;
+    background: linear-gradient(to bottom, #ffd180, #ffe0b2);
     border-radius: 5px;
     border-color: var(--text-color);
     border-style: solid;
-    border-width: 1px;
-}
-
-.cartao1, .cartao2, .cartao3, .cartao4, .cartao5, .cartao6, .cartao7, .cartao8, .cartao9 {
-    background: linear-gradient(to bottom, var(--secondary-color), var(--primary-color));
-    color: var(--accent-color);
-    padding: 5px;
-    border-radius: 5px;
-    border: 2px solid var(--highlight-color);
+    border-width: 2px;
     margin-top: 20px;
+    max-width: 240px;  /* ↓ Reduzi de 300px para 240px */
     transform-style: preserve-3d;
     transition: transform 0.8s;
     position: relative;
     cursor: pointer;
-    max-width: 300px;
 }
 
-.cartao.flipped .cartao2,
+/* Efeito flip */
 .cartao.flipped .cartao1,
+.cartao.flipped .cartao2,
 .cartao.flipped .cartao3,
 .cartao.flipped .cartao4,
 .cartao.flipped .cartao5,
 .cartao.flipped .cartao6,
 .cartao.flipped .cartao7,
 .cartao.flipped .cartao8,
-.Cartao.flipped .Cartao9 {
+.cartao.flipped .cartao9 {
     transform: rotateY(180deg);
 }
+
+/* Frente e verso dos cartões */
 .card-front, .card-back {
-  backface-visibility: hidden;
-  text-align: left;
-  font-size: 2vw;
-}
-.card-back {
-  transform: rotateY(180deg);
-  text-decoration: underline;
-  justify-content: flex-start;
-  overflow: hidden;
-  word-wrap: break-word;
-  line-height: 20px;
-  font-size: 15px;
-}
-.card-front{
+    backface-visibility: hidden;
+    text-align: left;
+    border-radius: 8px;
+    padding: 10px;
     word-wrap: break-word;
-    overflow: hidden;
-    line-height: 20px;
-    font-size: 15px;
+    line-height: 1.5;
+    font-size: 16px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
 }
-footer{
-    padding: 5px;
+
+.card-front {
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+}
+
+.card-back {
+    background-color: var(--accent-color);
+    color: var(--primary-color);
+    transform: rotateY(180deg);
+}
+
+/* Footer */
+footer {
+    padding: 8px;
     background-color: var(--title-color);
     border-radius: 5px;
     position: fixed;
-    margin-top: 20px;
     bottom: 0;
     left: 0;
     width: 100%;
-    margin-top: 10px;
+    border-top: 4px solid var(--highlight-color);
+    text-align: center;
 }
-.texto-rodape{
+
+.texto-rodape {
     color: var(--primary-color);
 }
+
 .mark a {
-    color: var(--highlight-color) ;
+    color: var(--highlight-color);
+    text-decoration: none;
 }
+
 .mark a:hover {
     color: var(--accent-color);
+}
+
+/* Responsivo */
+@media (max-width: 600px) {
+    .cabecalho {
+        font-size: 4vw;
+    }
+    .card-front, .card-back {
+        font-size: 14px;
+    }
 }
