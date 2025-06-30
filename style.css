@@ -1,12 +1,12 @@
 :root {
-    --primary-color: #1e1e2e;
-    --secondary-color: #44475a;
-    --accent-color: #50fa7b;
-    --highlight-color: #8be9fd;
-    --text-color: #f8f8f2;
-    --title-color: #ffb86c;
-    --link-color: #bd93f9;
-    --button-hover-color: #6272a4;
+    --primary-color: #fff5e6;
+    --secondary-color: #ffd1b3;
+    --accent-color: #ff6f61;
+    --highlight-color: #ffae42;
+    --text-color: #3a1f04;
+    --title-color: #e63946;
+    --link-color: #d7263d;
+    --button-hover-color: #ff4500;
     --font-body: "Segoe UI", sans-serif;
     --font-title: "Rakkas", serif;
 }
@@ -55,7 +55,7 @@ body {
     padding: 8px;
     border-radius: 8px;
     border: 2px solid var(--text-color);
-    background-color: var(--secondary-color);
+    background-color: var(--highlight-color);
 }
 
 /* Cartões */
@@ -94,7 +94,7 @@ body {
     word-wrap: break-word;
     line-height: 1.5;
     font-size: 16px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
 }
 
 .card-front {
@@ -111,7 +111,7 @@ body {
 /* Footer */
 footer {
     padding: 8px;
-    background-color: #000000;
+    background-color: var(--title-color);
     border-radius: 5px;
     position: fixed;
     bottom: 0;
@@ -122,7 +122,7 @@ footer {
 }
 
 .texto-rodape {
-    color: var(--text-color);
+    color: var(--primary-color);
 }
 
 .mark a {
@@ -132,14 +132,4 @@ footer {
 
 .mark a:hover {
     color: var(--accent-color);
-}
-
-/* Responsivo */
-@media (max-width: 600px) {
-    .cabecalho {
-        font-size: 4vw;
-    }
-    .card-front, .card-back {
-        font-size: 14px;
-    }
 }
