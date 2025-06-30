@@ -1,10 +1,10 @@
 :root{
-    --primary-color: #fffceb;
-    --secondayr-color: #b8e6e7;
-    --text-color: #000000;
-    --link-color: #4f05fc;
+    --primary-color: #fff5e6;
+    --secondayr-color: #ffd1b3;
+    --text-color: #3a1f04;
+    --link-color: #d7263d;
     --background-color: #FFFFFF;
-    --button-hover-color:#c504ff;
+    --button-hover-color:#ff4500;
     --font-body:"Chocolate Classical Sans", serif;
     --font-titulo: "Rakkas", serif;
 }
@@ -19,166 +19,52 @@
 }
 .cabecalho{
     padding: 5px;
-    background-color: rgba(120, 228, 255, 0.822);
+    background-color: var(--secondary-color);
     border-radius: 10px;
     font-size: 2vw;
+    text-align: center;
+    border-bottom: 1px solid var (--highlight-color);
 }
-.mudar{
-    color: red;
-    text-decoration: line-through;
+
+.cabecalho h2 {
+    color: var(--accent-color);
+}
+    
+.mudar {
+    color: var(--title-color);
     font-weight: bold;
     font-size: larger;
 }
 .cabecalho p{
-    color: #c94e4e;
-    text-decoration: line-through;
+    color: var(--link-color);
 }
 body{
-    background-image: url('img/library-background.jpg');
+    background-color: var(--primary-color);
+    color: var(--text-color);
     font-family: var(--font-body);
 }
 .design-conteudo{
     padding: 5px;
     border-radius: 5px;
-    border-color: #000000;
+    border-color: var(--text-color);
     border-style: solid;
     border-width: 1px;
 }
-.cartao1{
-    color: red;
+
+.cartao1, .cartao2, .cartao3, .cartao4, .cartao5, .cartao6, .cartao7, .cartao8, .cartao9 {
+    background: linear-gradient(to bottom, var(--secondary-color), var(--primary-color));
+    color: var(--accent-color);
     padding: 5px;
-    background: linear-gradient(to bottom, rgb(0, 255, 255), rgba(88, 169, 235, 0.575));
     border-radius: 5px;
-    border-color: #000000;
-    border-style: solid;
-    border-width: 2px;
+    border: 2px solid var(--highlight-color);
     margin-top: 20px;
-    max-width: 300px;
     transform-style: preserve-3d;
     transition: transform 0.8s;
     position: relative;
     cursor: pointer;
-}
-.cartao2{
-    color: red;
-    padding: 5px;
-    background: linear-gradient(to bottom, rgb(0, 255, 255), rgba(88, 169, 235, 0.568));
-    border-radius: 5px;
-    border-color: #000000;
-    border-style: solid;
-    border-width: 2px;
-    margin-top: 20px;
     max-width: 300px;
-    transform-style: preserve-3d;
-    transition: transform 0.8s;
-    position: relative;
-    cursor: pointer;
 }
-.cartao3{
-    color: red;
-    padding: 5px;
-    background: linear-gradient(to bottom, rgb(1, 255, 242), rgba(88, 169, 235, 0.61));
-    border-radius: 5px;
-    border-color: #000000;
-    border-style: solid;
-    border-width: 2px;
-    margin-top: 20px;
-    max-width: 300px;
-    transform-style: preserve-3d;
-    transition: transform 0.8s;
-    position: relative;
-    cursor: pointer;
-}
-.cartao4{
-    color: red;
-    padding: 5px;
-    background: linear-gradient(to bottom, rgb(0, 247, 255), rgba(88, 169, 235, 0.603));
-    border-radius: 5px;
-    border-color: #000000;
-    border-style: solid;
-    border-width: 2px;
-    margin-top: 20px;
-    max-width: 300px;
-    transform-style: preserve-3d;
-    transition: transform 0.8s;
-    position: relative;
-    cursor: pointer;
-}
-.cartao5{
-    color: red;
-    padding: 5px;
-    background: linear-gradient(to bottom, rgb(0, 255, 255), rgba(88, 169, 235, 0.548));
-    border-radius: 5px;
-    border-color: #000000;
-    border-style: solid;
-    border-width: 2px;
-    margin-top: 20px;
-    max-width: 300px;
-    transform-style: preserve-3d;
-    transition: transform 0.8s;
-    position: relative;
-    cursor: pointer;
-}
-.cartao6{
-    color: red;
-    padding: 5px;
-    background: linear-gradient(to bottom, rgb(0, 255, 234), rgba(88, 169, 235, 0.555));
-    border-radius: 5px;
-    border-color: #000000;
-    border-style: solid;
-    border-width: 2px;
-    margin-top: 20px;
-    max-width: 300px;
-    transform-style: preserve-3d;
-    transition: transform 0.8s;
-    position: relative;
-    cursor: pointer;
-}
-.cartao7{
-    color: red;
-    padding: 5px;
-    background: linear-gradient(to bottom, rgb(2, 225, 255), rgba(88, 169, 235, 0.582));
-    border-radius: 5px;
-    border-color: #000000;
-    border-style: solid;
-    border-width: 2px;
-    margin-top: 20px;
-    max-width: 300px;
-    transform-style: preserve-3d;
-    transition: transform 0.8s;
-    position: relative;
-    cursor: pointer;
-}
-.cartao8{
-    color: red;
-    padding: 5px;
-    background: linear-gradient(to bottom, rgb(3, 247, 255), rgba(125, 96, 192, 0.568));
-    border-radius: 5px;
-    border-color: #000000;
-    border-style: solid;
-    border-width: 2px;
-    margin-top: 20px;
-    max-width: 300px;
-    transform-style: preserve-3d;
-    transition: transform 0.8s;
-    position: relative;
-    cursor: pointer;
-}
-.cartao9{
-    color: red;
-    padding: 5px;
-    background: linear-gradient(to bottom, rgb(1, 255, 255), rgba(88, 169, 235, 0.596));
-    border-radius: 5px;
-    border-color: #000000;
-    border-style: solid;
-    border-width: 2px;
-    margin-top: 20px;
-    max-width: 300px;
-    transform-style: preserve-3d;
-    transition: transform 0.8s;
-    position: relative;
-    cursor: pointer;
-}
+
 .cartao.flipped .cartao2,
 .cartao.flipped .cartao1,
 .cartao.flipped .cartao3,
@@ -187,7 +73,7 @@ body{
 .cartao.flipped .cartao6,
 .cartao.flipped .cartao7,
 .cartao.flipped .cartao8,
-.Cartao.flipped .Cartao9{
+.Cartao.flipped .Cartao9 {
     transform: rotateY(180deg);
 }
 .card-front, .card-back {
@@ -212,7 +98,7 @@ body{
 }
 footer{
     padding: 5px;
-    background-color: #000000;
+    background-color: var(--title-color);
     border-radius: 5px;
     position: fixed;
     margin-top: 20px;
@@ -222,11 +108,11 @@ footer{
     margin-top: 10px;
 }
 .texto-rodape{
-    color: #FFFFFF;
+    color: var(--primary-color);
 }
-.mark a{
-    color: aqua;
+.mark a {
+    color: var(--highlight-color) ;
 }
-.mark a:hover{
-    color:deepskyblue;
+.mark a:hover {
+    color: var(--accent-color);
 }
