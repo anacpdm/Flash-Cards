@@ -1,232 +1,145 @@
-:root{
-    --primary-color: #fffceb;
-    --secondayr-color: #b8e6e7;
-    --text-color: #000000;
-    --link-color: #4f05fc;
-    --background-color: #FFFFFF;
-    --button-hover-color:#c504ff;
-    --font-body:"Chocolate Classical Sans", serif;
-    --font-titulo: "Rakkas", serif;
+:root {
+    --primary-color: #1e1e2e;
+    --secondary-color: #44475a;
+    --accent-color: #50fa7b;
+    --highlight-color: #8be9fd;
+    --text-color: #f8f8f2;
+    --title-color: #ffb86c;
+    --link-color: #bd93f9;
+    --button-hover-color: #6272a4;
+    --font-body: "Segoe UI", sans-serif;
+    --font-title: "Rakkas", serif;
 }
-#container{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 10px;
-    padding: 20px;
-    justify-content: space ;
-    margin-bottom: 80px;
-    flex-wrap: wrap;
+
+/* Corpo */
+body {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    font-family: var(--font-body);
 }
-.cabecalho{
-    padding: 5px;
-    background-color: rgba(120, 228, 255, 0.822);
+
+/* Cabeçalho */
+.cabecalho {
+    padding: 15px;
+    background-color: var(--secondary-color);
     border-radius: 10px;
-    font-size: 2vw;
+    text-align: center;
+    border-bottom: 4px solid var(--highlight-color);
 }
-.mudar{
-    color: red;
-    text-decoration: line-through;
+
+.cabecalho h2 {
+    color: var(--accent-color);
+}
+
+.mudar {
+    color: var(--title-color);
     font-weight: bold;
     font-size: larger;
 }
-.cabecalho p{
-    color: #c94e4e;
-    text-decoration: line-through;
+
+.cabecalho p {
+    color: var(--link-color);
 }
-body{
-    background-image: url('img/library-background.jpg');
-    font-family: var(--font-body);
+
+/* Container dos cartões */
+#container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    margin-bottom: 80px;
 }
-.design-conteudo{
-    padding: 5px;
-    border-radius: 5px;
-    border-color: #000000;
-    border-style: solid;
-    border-width: 1px;
+
+/* Design dos cartões */
+.design-conteudo {
+    padding: 8px;
+    border-radius: 8px;
+    border: 2px solid var(--text-color);
+    background-color: var(--secondary-color);
 }
-.cartao1{
-    color: red;
-    padding: 5px;
-    background: linear-gradient(to bottom, rgb(0, 255, 255), rgba(88, 169, 235, 0.575));
-    border-radius: 5px;
-    border-color: #000000;
-    border-style: solid;
-    border-width: 2px;
-    margin-top: 20px;
-    max-width: 300px;
+
+/* Cartões */
+.cartao1, .cartao2, .cartao3, .cartao4, .cartao5, .cartao6, .cartao7, .cartao8, .cartao9 {
+    background: linear-gradient(to bottom, var(--secondary-color), var(--primary-color));
+    color: var(--accent-color);
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid var(--highlight-color);
     transform-style: preserve-3d;
     transition: transform 0.8s;
     position: relative;
     cursor: pointer;
+    max-width: 100%;
 }
-.cartao2{
-    color: red;
-    padding: 5px;
-    background: linear-gradient(to bottom, rgb(0, 255, 255), rgba(88, 169, 235, 0.568));
-    border-radius: 5px;
-    border-color: #000000;
-    border-style: solid;
-    border-width: 2px;
-    margin-top: 20px;
-    max-width: 300px;
-    transform-style: preserve-3d;
-    transition: transform 0.8s;
-    position: relative;
-    cursor: pointer;
-}
-.cartao3{
-    color: red;
-    padding: 5px;
-    background: linear-gradient(to bottom, rgb(1, 255, 242), rgba(88, 169, 235, 0.61));
-    border-radius: 5px;
-    border-color: #000000;
-    border-style: solid;
-    border-width: 2px;
-    margin-top: 20px;
-    max-width: 300px;
-    transform-style: preserve-3d;
-    transition: transform 0.8s;
-    position: relative;
-    cursor: pointer;
-}
-.cartao4{
-    color: red;
-    padding: 5px;
-    background: linear-gradient(to bottom, rgb(0, 247, 255), rgba(88, 169, 235, 0.603));
-    border-radius: 5px;
-    border-color: #000000;
-    border-style: solid;
-    border-width: 2px;
-    margin-top: 20px;
-    max-width: 300px;
-    transform-style: preserve-3d;
-    transition: transform 0.8s;
-    position: relative;
-    cursor: pointer;
-}
-.cartao5{
-    color: red;
-    padding: 5px;
-    background: linear-gradient(to bottom, rgb(0, 255, 255), rgba(88, 169, 235, 0.548));
-    border-radius: 5px;
-    border-color: #000000;
-    border-style: solid;
-    border-width: 2px;
-    margin-top: 20px;
-    max-width: 300px;
-    transform-style: preserve-3d;
-    transition: transform 0.8s;
-    position: relative;
-    cursor: pointer;
-}
-.cartao6{
-    color: red;
-    padding: 5px;
-    background: linear-gradient(to bottom, rgb(0, 255, 234), rgba(88, 169, 235, 0.555));
-    border-radius: 5px;
-    border-color: #000000;
-    border-style: solid;
-    border-width: 2px;
-    margin-top: 20px;
-    max-width: 300px;
-    transform-style: preserve-3d;
-    transition: transform 0.8s;
-    position: relative;
-    cursor: pointer;
-}
-.cartao7{
-    color: red;
-    padding: 5px;
-    background: linear-gradient(to bottom, rgb(2, 225, 255), rgba(88, 169, 235, 0.582));
-    border-radius: 5px;
-    border-color: #000000;
-    border-style: solid;
-    border-width: 2px;
-    margin-top: 20px;
-    max-width: 300px;
-    transform-style: preserve-3d;
-    transition: transform 0.8s;
-    position: relative;
-    cursor: pointer;
-}
-.cartao8{
-    color: red;
-    padding: 5px;
-    background: linear-gradient(to bottom, rgb(3, 247, 255), rgba(125, 96, 192, 0.568));
-    border-radius: 5px;
-    border-color: #000000;
-    border-style: solid;
-    border-width: 2px;
-    margin-top: 20px;
-    max-width: 300px;
-    transform-style: preserve-3d;
-    transition: transform 0.8s;
-    position: relative;
-    cursor: pointer;
-}
-.cartao9{
-    color: red;
-    padding: 5px;
-    background: linear-gradient(to bottom, rgb(1, 255, 255), rgba(88, 169, 235, 0.596));
-    border-radius: 5px;
-    border-color: #000000;
-    border-style: solid;
-    border-width: 2px;
-    margin-top: 20px;
-    max-width: 300px;
-    transform-style: preserve-3d;
-    transition: transform 0.8s;
-    position: relative;
-    cursor: pointer;
-}
-.cartao.flipped .cartao2,
+
+/* Efeito flip */
 .cartao.flipped .cartao1,
+.cartao.flipped .cartao2,
 .cartao.flipped .cartao3,
 .cartao.flipped .cartao4,
 .cartao.flipped .cartao5,
 .cartao.flipped .cartao6,
 .cartao.flipped .cartao7,
 .cartao.flipped .cartao8,
-.Cartão.flipped .Cartão9{
+.cartao.flipped .cartao9 {
     transform: rotateY(180deg);
 }
+
+/* Frente e verso dos cartões */
 .card-front, .card-back {
-  backface-visibility: hidden;
-  text-align: left;
-  font-size: 2vw;
-}
-.card-back {
-  transform: rotateY(180deg);
-  text-decoration: underline;
-  justify-content: flex-start;
-  overflow: hidden;
-  word-wrap: break-word;
-  line-height: 20px;
-  font-size: 15px;
-}
-.card-front{
+    backface-visibility: hidden;
+    text-align: left;
+    border-radius: 8px;
+    padding: 10px;
     word-wrap: break-word;
-    overflow: hidden;
-    line-height: 20px;
-    font-size: 15px;
+    line-height: 1.5;
+    font-size: 16px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.5);
 }
-footer{
-    padding: 5px;
+
+.card-front {
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+}
+
+.card-back {
+    background-color: var(--accent-color);
+    color: var(--primary-color);
+    transform: rotateY(180deg);
+}
+
+/* Footer */
+footer {
+    padding: 8px;
     background-color: #000000;
     border-radius: 5px;
     position: fixed;
-    margin-top: 20px;
     bottom: 0;
     left: 0;
     width: 100%;
-    margin-top: 10px;
+    border-top: 4px solid var(--highlight-color);
+    text-align: center;
 }
-.texto-rodape{
-    color: #FFFFFF;
+
+.texto-rodape {
+    color: var(--text-color);
 }
-.mark a{
-    color: aqua;
+
+.mark a {
+    color: var(--highlight-color);
+    text-decoration: none;
 }
-.mark a:hover{
-    color:deepskyblue;
+
+.mark a:hover {
+    color: var(--accent-color);
+}
+
+/* Responsivo */
+@media (max-width: 600px) {
+    .cabecalho {
+        font-size: 4vw;
+    }
+    .card-front, .card-back {
+        font-size: 14px;
+    }
 }
