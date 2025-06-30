@@ -3,38 +3,38 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Flashcards Estudos</title>
+  <title>Flashcards Matemática</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header class="cabecalho">
     <div class="titulo">
-      <h2>Notas rápidas de estudos</h2>
+      <h2>Notas Rápidas de Matemática</h2>
     </div>
     <div class="mudar">
-      <h2>(MUDAR TODO TEXTO QUE ESTIVER EM VERMELHO)</h2>
+      <h2>MATEMÁTICA INTERMEDIÁRIA</h2>
     </div>
-    <p>Este é um projeto desenvolvido pensando numa ferramenta de estudos. O intuito é elaborar e organizar um mecanismo de notas ou uma ferramenta que organize um pequeno resumo dos temas.</p>
-    <p>O grid de cards está organizado em uma matriz de 3x3, podendo ser expandido ou reduzido a matrizes de tamanhos menores.</p>
+    <p>Este é um conjunto de flashcards para revisar conceitos importantes de matemática intermediária. Perfeito para fixar e praticar!</p>
   </header>
 
   <main>
     <section id="container">
+
       <!-- Card 1 -->
       <article class="cartao" onclick="this.classList.toggle('flipped')">
         <div class="geral">
-          <div class="cartao-conteudo cartao-conteudo1">
+          <div class="cartao-conteudo">
             <div class="cartao1">
               <div class="card-front">
                 <div class="design-conteudo">
-                  <h3>conteúdo 1</h3>
+                  <h3>Equações de 2º Grau</h3>
                 </div>
-                <div class="cartao-conteudo-pergunta">pergunta 1</div>
-                <div class="cartao-conteudo-resposta">resposta 1</div>
+                <div class="cartao-conteudo-pergunta">Qual é a fórmula de Bhaskara?</div>
+                <div class="cartao-conteudo-resposta">x = [-b ± √(b² - 4ac)] / 2a</div>
               </div>
               <div class="card-back">
-                <h3>Resumo do cartão 1</h3>
-                <p>conteudo do verso teeeeeeeeeeeeeeeeeeeeeeeexxxxxxxxxxxxxxxxxxxxxxxxtooooooooooooooooooooooo</p>
+                <h3>Resumo</h3>
+                <p>Usamos Bhaskara para resolver ax² + bx + c = 0, onde Δ = b² - 4ac define a quantidade de raízes reais.</p>
               </div>
             </div>
           </div>
@@ -44,18 +44,18 @@
       <!-- Card 2 -->
       <article class="cartao" onclick="this.classList.toggle('flipped')">
         <div class="geral">
-          <div class="cartao-conteudo cartao-conteudo2">
+          <div class="cartao-conteudo">
             <div class="cartao2">
               <div class="card-front">
                 <div class="design-conteudo">
-                  <h3>conteúdo 2</h3>
+                  <h3>Progressão Aritmética</h3>
                 </div>
-                <div class="cartao-conteudo-pergunta">pergunta 2</div>
-                <div class="cartao-conteudo-resposta">resposta 2</div>
+                <div class="cartao-conteudo-pergunta">Como se calcula o termo geral?</div>
+                <div class="cartao-conteudo-resposta">an = a1 + (n-1)·r</div>
               </div>
               <div class="card-back">
                 <h3>Resumo</h3>
-                <p>Conteúdo atrás do cartão</p>
+                <p>Na PA, o termo geral depende do primeiro termo (a1) e da razão (r). Útil para encontrar qualquer termo da sequência.</p>
               </div>
             </div>
           </div>
@@ -65,18 +65,18 @@
       <!-- Card 3 -->
       <article class="cartao" onclick="this.classList.toggle('flipped')">
         <div class="geral">
-          <div class="cartao-conteudo cartao-conteudo3">
+          <div class="cartao-conteudo">
             <div class="cartao3">
               <div class="card-front">
                 <div class="design-conteudo">
-                  <h3>conteúdo 3</h3>
+                  <h3>Porcentagem</h3>
                 </div>
-                <div class="cartao-conteudo-pergunta">pergunta 3</div>
-                <div class="cartao-conteudo-resposta">resposta 3</div>
+                <div class="cartao-conteudo-pergunta">Quanto é 20% de 150?</div>
+                <div class="cartao-conteudo-resposta">30</div>
               </div>
               <div class="card-back">
-                <h3>Resumo cartão 3</h3>
-                <p>conteudo do resumo do cartao 3</p>
+                <h3>Resumo</h3>
+                <p>Para calcular porcentagem, multiplica-se o valor pela taxa e divide por 100. Ex.: 150 × 20 ÷ 100 = 30.</p>
               </div>
             </div>
           </div>
@@ -86,18 +86,18 @@
       <!-- Card 4 -->
       <article class="cartao" onclick="this.classList.toggle('flipped')">
         <div class="geral">
-          <div class="cartao-conteudo cartao-conteudo4">
+          <div class="cartao-conteudo">
             <div class="cartao4">
               <div class="card-front">
                 <div class="design-conteudo">
-                  <h3>conteúdo 4</h3>
+                  <h3>Geometria Plana</h3>
                 </div>
-                <div class="cartao-conteudo-pergunta">pergunta 4</div>
-                <div class="cartao-conteudo-resposta">resposta 4</div>
+                <div class="cartao-conteudo-pergunta">Área do triângulo?</div>
+                <div class="cartao-conteudo-resposta">(base × altura) ÷ 2</div>
               </div>
               <div class="card-back">
-                <h3>Resumo do cartão 4</h3>
-                <p>conteudo do verso 4</p>
+                <h3>Resumo</h3>
+                <p>Fórmula para área do triângulo é A = (b × h) ÷ 2, válida para qualquer triângulo com base e altura conhecidas.</p>
               </div>
             </div>
           </div>
@@ -107,18 +107,18 @@
       <!-- Card 5 -->
       <article class="cartao" onclick="this.classList.toggle('flipped')">
         <div class="geral">
-          <div class="cartao-conteudo cartao-conteudo5">
+          <div class="cartao-conteudo">
             <div class="cartao5">
               <div class="card-front">
                 <div class="design-conteudo">
-                  <h3>conteúdo 5</h3>
+                  <h3>MMC e MDC</h3>
                 </div>
-                <div class="cartao-conteudo-pergunta">pergunta 5</div>
-                <div class="cartao-conteudo-resposta">resposta 5</div>
+                <div class="cartao-conteudo-pergunta">MMC de 6 e 8?</div>
+                <div class="cartao-conteudo-resposta">24</div>
               </div>
               <div class="card-back">
-                <h3>Resumo do cartão 5</h3>
-                <p>conteudo do verso</p>
+                <h3>Resumo</h3>
+                <p>MMC é o menor múltiplo comum. MDC é o maior divisor comum. Técnicas incluem fatoração ou algoritmos práticos.</p>
               </div>
             </div>
           </div>
@@ -128,18 +128,18 @@
       <!-- Card 6 -->
       <article class="cartao" onclick="this.classList.toggle('flipped')">
         <div class="geral">
-          <div class="cartao-conteudo cartao-conteudo6">
+          <div class="cartao-conteudo">
             <div class="cartao6">
               <div class="card-front">
                 <div class="design-conteudo">
-                  <h3>conteúdo 6</h3>
+                  <h3>Razão e Proporção</h3>
                 </div>
-                <div class="cartao-conteudo-pergunta">pergunta 6</div>
-                <div class="cartao-conteudo-resposta">resposta 6</div>
+                <div class="cartao-conteudo-pergunta">O que é uma proporção?</div>
+                <div class="cartao-conteudo-resposta">Igualdade entre duas razões.</div>
               </div>
               <div class="card-back">
-                <h3>Resumo do cartão 6</h3>
-                <p>conteudo do verso 6</p>
+                <h3>Resumo</h3>
+                <p>Uma proporção é quando duas frações são iguais: a/b = c/d. Usada em regra de três, escalas e mapas.</p>
               </div>
             </div>
           </div>
@@ -149,18 +149,18 @@
       <!-- Card 7 -->
       <article class="cartao" onclick="this.classList.toggle('flipped')">
         <div class="geral">
-          <div class="cartao-conteudo cartao-conteudo7">
+          <div class="cartao-conteudo">
             <div class="cartao7">
               <div class="card-front">
                 <div class="design-conteudo">
-                  <h3>conteúdo 7</h3>
+                  <h3>Probabilidade</h3>
                 </div>
-                <div class="cartao-conteudo-pergunta">pergunta 7</div>
-                <div class="cartao-conteudo-resposta">resposta 7</div>
+                <div class="cartao-conteudo-pergunta">Fórmula da probabilidade?</div>
+                <div class="cartao-conteudo-resposta">P = casos favoráveis ÷ casos possíveis</div>
               </div>
               <div class="card-back">
-                <h3>Resumo do cartão 7</h3>
-                <p>conteudo do verso 7</p>
+                <h3>Resumo</h3>
+                <p>Probabilidade mede a chance de um evento ocorrer. Vai de 0 (impossível) a 1 (certo).</p>
               </div>
             </div>
           </div>
@@ -170,18 +170,18 @@
       <!-- Card 8 -->
       <article class="cartao" onclick="this.classList.toggle('flipped')">
         <div class="geral">
-          <div class="cartao-conteudo cartao-conteudo8">
+          <div class="cartao-conteudo">
             <div class="cartao8">
               <div class="card-front">
                 <div class="design-conteudo">
-                  <h3>conteúdo 8</h3>
+                  <h3>Geometria Espacial</h3>
                 </div>
-                <div class="cartao-conteudo-pergunta">pergunta 8</div>
-                <div class="cartao-conteudo-resposta">resposta ?</div>
+                <div class="cartao-conteudo-pergunta">Volume do cubo?</div>
+                <div class="cartao-conteudo-resposta">V = aresta³</div>
               </div>
               <div class="card-back">
-                <h3>Resumo do cartão 8</h3>
-                <p>conteudo do verso ?</p>
+                <h3>Resumo</h3>
+                <p>O volume do cubo é calculado elevando a aresta ao cubo. Usado para medir espaços tridimensionais.</p>
               </div>
             </div>
           </div>
@@ -191,29 +191,30 @@
       <!-- Card 9 -->
       <article class="cartao" onclick="this.classList.toggle('flipped')">
         <div class="geral">
-          <div class="cartao-conteudo cartao-conteudo9">
+          <div class="cartao-conteudo">
             <div class="cartao9">
               <div class="card-front">
                 <div class="design-conteudo">
-                  <h3>conteúdo 9</h3>
+                  <h3>Funções</h3>
                 </div>
-                <div class="cartao-conteudo-pergunta">pergunta 9</div>
-                <div class="cartao-conteudo-resposta">resposta 9</div>
+                <div class="cartao-conteudo-pergunta">O que é uma função?</div>
+                <div class="cartao-conteudo-resposta">Relação onde cada x tem um único y.</div>
               </div>
               <div class="card-back">
-                <h3>Resumo do cartão 9</h3>
-                <p>conteudo do verso 9</p>
+                <h3>Resumo</h3>
+                <p>Função associa elementos de um conjunto (domínio) a um único elemento de outro (contradomínio).</p>
               </div>
             </div>
           </div>
         </div>
       </article>
+
     </section>
   </main>
 
   <footer>
     <div class="footer-text">
-      <a class="texto-rodape">Projeto desenvolvido pela Alura. Melhorado e aplicado por Rafael K.T Nakatsuchi</a>
+      <a class="texto-rodape">Projeto desenvolvido pela Alura. Adaptado por Rafael K.T Nakatsuchi.</a>
     </div>
     <div class="mark">
       <a href="https://github.com/RafaNaka33">2025 | @RafaNaka</a>
